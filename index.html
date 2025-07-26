@@ -1,0 +1,79 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIT Energia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #0e1217; color: #e6edf3; padding: 40px; }
+    .container { max-width: 960px; margin: auto; background: #161b22; border-radius: 12px; padding: 40px; box-shadow: 0 0 15px rgba(0,0,0,0.4); }
+    h1 { font-size: 2.5rem; margin-bottom: 20px; color: #58a6ff; }
+    nav { margin-bottom: 30px; display: flex; gap: 16px; flex-wrap: wrap; }
+    nav button { background: #21262d; border: 1px solid #30363d; color: #c9d1d9; padding: 10px 20px; border-radius: 8px; cursor: pointer; transition: 0.3s; }
+    nav button:hover { background: #30363d; }
+    .section { margin-bottom: 30px; }
+    .label { font-weight: 600; color: #8b949e; display: block; margin-top: 10px; }
+    .value { margin-left: 10px; color: #e6edf3; }
+    .highlight { color: #3fb950; font-weight: bold; }
+    ul { margin-top: 15px; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FIT Energia</h1>
+    <nav>
+      <button onclick="scrollToSection('servicos')">Serviços</button>
+      <button onclick="scrollToSection('dados')">Dados da Empresa</button>
+      <button onclick="scrollToSection('endereco')">Endereço</button>
+      <button onclick="scrollToSection('socios')">Administradores</button>
+    </nav>
+
+    <div id="servicos" class="section">
+      <h2>🔋 Principais Serviços</h2>
+      <p>A FIT Energia é uma associação de consumidores de energia que atua no modelo de geração distribuída compartilhada, oferecendo economia e sustentabilidade por meio da energia solar. Ela viabiliza o acesso à energia limpa para pequenas empresas, comércios e residências urbanas.</p>
+      <ul>
+        <li>Gestão de consórcios de energia solar</li>
+        <li>Distribuição de créditos energéticos personalizados</li>
+        <li>Monitoramento digital do consumo</li>
+        <li>Consultoria em eficiência e sustentabilidade</li>
+        <li>Relacionamento direto com consumidores</li>
+      </ul>
+    </div>
+
+    <div id="dados" class="section">
+      <h2>📄 Dados da Empresa</h2>
+      <span class="label">Razão Social:</span><span class="value">FIT Associação de Consumidores de Energia de Geração Distribuída</span><br>
+      <span class="label">Nome Fantasia:</span><span class="value">FIT Energia</span><br>
+      <span class="label">CNPJ:</span><span class="value">49.351.967/0001-07</span><br>
+      <span class="label">Data de Abertura:</span><span class="value">24/01/2023</span><br>
+      <span class="label">Natureza Jurídica:</span><span class="value">Associação Privada</span><br>
+      <span class="label">Situação:</span><span class="value highlight">ATIVA</span><br>
+    </div>
+
+    <div id="endereco" class="section">
+      <h2>📍 Endereço</h2>
+      <span class="label">Rua:</span><span class="value">Avenida Raja Gabaglia, 339</span><br>
+      <span class="label">Bairro:</span><span class="value">Cidade Jardim</span><br>
+      <span class="label">Cidade:</span><span class="value">Belo Horizonte</span><br>
+      <span class="label">Estado:</span><span class="value">Minas Gerais (MG)</span><br>
+      <span class="label">CEP:</span><span class="value">30380-103</span><br>
+    </div>
+
+    <div id="socios" class="section">
+      <h2>🧑‍💼 Administradores</h2>
+      <ul>
+        <li>Bruno Figueiredo Menezes – Presidente (desde 24/01/2023)</li>
+        <li>Fernando do Sacramento – Diretor (desde 28/03/2024)</li>
+        <li>Rômulo Reis Bechtlufft – Diretor (desde 28/03/2024)</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
